@@ -38,7 +38,8 @@ namespace baltaDataAcess
                 //OneToOne(connection);
                 //OneToMany(connection);
                 //QueryMultiple(connection);
-
+                //SelectIn(connection);
+                Like(connection, "api");
 
 
             }
@@ -145,5 +146,33 @@ namespace baltaDataAcess
             }
         }
     
+        static void SelectIn(SqlConnection connection)
+        {
+            var query = @"select * from career where [Id] in @Id";
+
+            var items = connection.Query<Career>(query, new
+            {
+                Id = new[] { "01AE8A85-B4E8-4194-A0F1-1C6190AF54CB", "E6730D1C-6870-4DF3-AE68-438624E04C72" }
+            });
+
+            foreach (var item in items)
+            {
+                Console.WriteLine(item.Title);
+            }
+        }
+        static void Like(SqlConnection connection, string like)
+        {
+            var query = @"select * from Course where [Title] Like @exp";
+            var str = string.Format("%{0}%", like);
+            var items = connection.Query<Course>(query, new
+            {
+                exp = str
+            });
+
+            foreach (var item in items)
+            {
+                Console.WriteLine(item.Title);
+            }
+        }
     }
 }
