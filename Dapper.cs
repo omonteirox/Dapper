@@ -1,5 +1,6 @@
 ﻿using baltaDataAcess.Model;
 using Dapper;
+using dotenv.net;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -13,7 +14,8 @@ namespace baltaDataAcess
     {
         static void Main(string[] args)
         {
-            const string connectionString = "Server=localhost,1433;Database=balta;User ID= sa;Password=gadmin22@;";
+            DotEnv.Load();
+            string connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
             using (var connection = new SqlConnection(connectionString))
             {
                 //CreateCategory(connection, new Category

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8G3hwjk6sBzzWkK8JCWzfsu/NUSkq3DnE2g+ciUZsrqQX50RCo8p+fwTve+I3jUAbSANlFv95tQ99OeonxUp+A==",
+  "dgSpecHash": "arOeLwvWnDhvhh8YphO9nByQfP3/vnds84A+OhF8MpmUQoyQ6DA/OeSHV57xIed/yURNcI460Y3i/xBfPtn4Sw==",
   "success": true,
   "projectFilePath": "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gmonteirox\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\gmonteirox\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
