@@ -33,12 +33,14 @@ namespace baltaDataAcess
                 //    Description = "Amazon AWS",
                 //    Featured = false
                 //});
-                ListCategories(connection);
+                //ListCategories(connection);
                 //ListCategory(connection, "amazon-aws");
                 //OneToOne(connection);
                 //OneToMany(connection);
+                //QueryMultiple(connection);
 
-                
+
+
             }
         }
         static void ListCategories(SqlConnection connection)
@@ -123,5 +125,25 @@ namespace baltaDataAcess
                 }
             }
         }
+        // Many to many
+        static void QueryMultiple(SqlConnection connection)
+        {
+            var query = @"SELECT * from [Category]; SELECT * FROM [Course]";
+            using (var multi = connection.QueryMultiple(query))
+            {
+                var categories = multi.Read<Category>();
+                var courses = multi.Read<Course>();
+
+                foreach(var item in categories)
+                {
+                    Console.WriteLine(item.Title);
+                }
+                foreach (var item in courses)
+                {
+                    Console.WriteLine(item.Title);
+                }
+            }
+        }
+    
     }
 }
