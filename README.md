@@ -7,3 +7,4 @@
 - Dapper
 - Dapper Contrib
 - Micrososft.Data.SqlClient
+- DotNetEnv
