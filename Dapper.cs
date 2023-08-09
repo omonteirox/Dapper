@@ -1,12 +1,7 @@
 ﻿using baltaDataAcess.Model;
 using Dapper;
-using dotenv.net;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace baltaDataAcess
 {
@@ -14,7 +9,7 @@ namespace baltaDataAcess
     {
         static void Main(string[] args)
         {
-            DotEnv.Load();
+            DotNetEnv.Env.TraversePath().Load();
             string connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
             using (var connection = new SqlConnection(connectionString))
             {
@@ -38,10 +33,11 @@ namespace baltaDataAcess
                 //    Description = "Amazon AWS",
                 //    Featured = false
                 //});
-                //ListCategories(connection);
+                ListCategories(connection);
                 //ListCategory(connection, "amazon-aws");
                 //OneToOne(connection);
-                OneToMany(connection);
+                //OneToMany(connection);
+
                 
             }
         }

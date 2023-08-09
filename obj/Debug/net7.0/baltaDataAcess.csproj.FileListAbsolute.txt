@@ -22,3 +22,8 @@ C:\dev\.net\baltaDataAcess\obj\Debug\net7.0\baltaDataAcess.genruntimeconfig.cach
 C:\dev\.net\baltaDataAcess\obj\Debug\net7.0\ref\baltaDataAcess.dll
 C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Dapper.dll
 C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Dapper.Contrib.dll
+C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\DotNetEnv.dll
+C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\dev\.net\baltaDataAcess\bin\Debug\net7.0\Sprache.dll
