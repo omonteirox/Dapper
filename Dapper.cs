@@ -174,5 +174,24 @@ namespace baltaDataAcess
                 Console.WriteLine(item.Title);
             }
         }
+        
+        static void Transactions(SqlConnection connection, Category category)
+        {
+            var insertSql = @"Insert into [category] values (
+                                @Id,
+                                @Title,
+                                @Url,
+                                @Summary,
+                                @Order,
+                                @Description,
+                                @Featured)";
+            using(var transaction = connection.BeginTransaction())
+            {
+            var rows = connection.Execute(insertSql, category, transaction);
+                transaction.Commit();
+                transaction.Rollback();
+            Console.WriteLine($"linhas inseridas - ${rows}");
+            }
+        }
     }
 }
