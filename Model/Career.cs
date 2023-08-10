@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace baltaDataAcess.Model
 {
-    internal class Career
+    [Table("[Career]")]
+    public class Career
     {
         public Guid Id { get; set; }
         public string Title { get; set; }
@@ -15,5 +17,6 @@ namespace baltaDataAcess.Model
         {
             CareerItems = new List<CareerItem>();
         }
+
     }
 }
