@@ -16,7 +16,7 @@ namespace baltaDataAcess.Services
 
         public void Create(Course model) => repository.Create(model);
       
-        public void Get () => repository.Get();
+        public IEnumerable<Course> Get () => repository.Get();
        
         public void GetById(int id) => repository.GetById(id);
        

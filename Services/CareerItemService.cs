@@ -16,7 +16,7 @@ namespace baltaDataAcess.Services
 
         public void Create(CareerItem model) => repository.Create(model);
       
-        public void Get () => repository.Get();
+        public IEnumerable<CareerItem> Get () => repository.Get();
        
         public void GetById(int id) => repository.GetById(id);
        

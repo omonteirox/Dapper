@@ -1,6 +1,7 @@
 ﻿using baltaDataAcess.Model;
 using baltaDataAcess.Repositories;
 using baltaDataAcess.Services;
+using baltaDataAcess.Utils;
 using Dapper;
 using System.Data.SqlClient;
 
@@ -13,15 +14,18 @@ namespace baltaDataAcess
         {
             DotNetEnv.Env.TraversePath().Load();
             string connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION_STRING");
+            ToWordDocument generateDoc ;
             using (var connection = new SqlConnection(connectionString))
             {
-                CategoriesService categoriesService = new(connection);
-                CareerItemService careerItemService = new(connection);
-                CourseService courseService = new(connection);
-                CareerService careerService = new(connection);
-                foreach(var cat in categoriesService.Get() ){
-                    System.Console.WriteLine($"Nome Categoria -> {cat.Title}");
-                }
+                generateDoc = new(connection);
+                generateDoc.CreateDocument();
+                // CategoriesService categoriesService = new(connection);
+                // CareerItemService careerItemService = new(connection);
+                // CourseService courseService = new(connection);
+                // CareerService careerService = new(connection);
+                // foreach(var cat in categoriesService.Get() ){
+                //     System.Console.WriteLine($"Nome Categoria -> {cat.Title}");
+                // }
                 //ListCategories(connection);
                 //ListCategory(connection, "amazon-aws");
                 //OneToOne(connection);
@@ -29,6 +33,7 @@ namespace baltaDataAcess
                 //QueryMultiple(connection);
                 //SelectIn(connection);
                 // Like(connection, "api");
+                
 
 
             }
