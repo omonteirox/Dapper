@@ -11,7 +11,7 @@ namespace baltaDataAcess.Utils
         readonly CareerItemService careerItemService;
         readonly CourseService courseService;
         readonly CareerService careerService;
-        readonly string filePath = "C:/Users/gmonteirox/Desktop/Consultas.docx";
+        
         public ToWordDocument(SqlConnection connection)
         {
             categoriesService = new(connection);
@@ -19,8 +19,12 @@ namespace baltaDataAcess.Utils
             courseService = new(connection);
             careerService = new(connection);
         }
-        public void CreateDocument()
+        public  void CreateDocument()
         {
+         string folderName = $"Pasta do Dia {DateTime.Now.ToString("dd-MM-yyyy")}";
+         string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), folderName);
+         Directory.CreateDirectory(filePath);
+            filePath = Path.Combine(filePath, $"Relatorio do dia {DateTime.Now.ToString("dd-MM-yyyy")}.docx");
             Formatting formatador = new()
             {
                 Bold = true
