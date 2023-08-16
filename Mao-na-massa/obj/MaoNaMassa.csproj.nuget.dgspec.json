@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\.net\\MaoNaMassa\\MaoNaMassa.csproj": {}
+    "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\MaoNaMassa.csproj": {}
   },
   "projects": {
-    "C:\\dev\\.net\\MaoNaMassa\\MaoNaMassa.csproj": {
+    "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\MaoNaMassa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\.net\\MaoNaMassa\\MaoNaMassa.csproj",
+        "projectUniqueName": "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\MaoNaMassa.csproj",
         "projectName": "MaoNaMassa",
-        "projectPath": "C:\\dev\\.net\\MaoNaMassa\\MaoNaMassa.csproj",
+        "projectPath": "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\MaoNaMassa.csproj",
         "packagesPath": "C:\\Users\\gmonteirox\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\.net\\MaoNaMassa\\obj\\",
+        "outputPath": "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gmonteirox\\AppData\\Roaming\\NuGet\\NuGet.Config",

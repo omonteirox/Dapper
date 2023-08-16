@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dE0ZQZMtaOCgS2XhjImtIpOw8/HtuZd7cUU7iUqG/mbsB/oBz9RWYYo22RFJuZtfUH9RwENz2JFXVnUiuQerSw==",
+  "dgSpecHash": "PaUoRkaa/7YTii+zs1Mebe32Ms3P15Hl5WX0jYCd/ytBDmeFPP3k9xmSr2AZuN5zU9gFmLiE8pHMj8q5ydL+PQ==",
   "success": true,
-  "projectFilePath": "C:\\dev\\.net\\MaoNaMassa\\MaoNaMassa.csproj",
+  "projectFilePath": "c:\\dev\\.net\\baltaDataAcess\\Mao-na-massa\\MaoNaMassa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gmonteirox\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
