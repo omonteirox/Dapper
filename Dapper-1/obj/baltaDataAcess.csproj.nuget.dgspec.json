@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj": {}
+    "c:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj": {}
   },
   "projects": {
-    "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj": {
+    "c:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
+        "projectUniqueName": "c:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
         "projectName": "baltaDataAcess",
-        "projectPath": "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
+        "projectPath": "c:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
         "packagesPath": "C:\\Users\\gmonteirox\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\.net\\baltaDataAcess\\obj\\",
+        "outputPath": "c:\\dev\\.net\\baltaDataAcess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gmonteirox\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tBpwe9umLeSueEDh2dMnZiB/u+opgisfQtjttv9GI3smlb4b7bBqdr6qUcKP1bbFTnzkuXokezKQK7+VRKfz/Q==",
+  "dgSpecHash": "aR6VUgoYYKiserlLWVsa5uzkTetO6Eo37W1YptNIrL9G20VTootkI2ZiNUPrhHahhyiZPKfDoQziYaiC6JH8aw==",
   "success": true,
-  "projectFilePath": "C:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
+  "projectFilePath": "c:\\dev\\.net\\baltaDataAcess\\baltaDataAcess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gmonteirox\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\gmonteirox\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
